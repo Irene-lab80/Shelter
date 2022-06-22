@@ -1,0 +1,124 @@
+.donation-section {
+  background-color: $color-light-l;
+  padding: 7.9rem 0 10rem;
+
+  @include media-mobile{
+    padding: 42px 0;
+  }
+}
+
+.donation-section__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media-tablet {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.donation-section__info {
+  margin-left: 3rem;
+  max-width: 38rem;
+  @include media-tablet {
+    margin-left: 0;
+  }
+}
+
+.donation-section__subtitle {
+  margin-top: 2rem;
+  font-family: 'Georgia';
+  font-size: 1.5rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+
+  @include media-690 {
+    text-align: center;  
+    letter-spacing: normal;
+  }
+}
+
+.donation-section__card {
+  display: flex;
+  align-items: center;
+  margin-top: 1.8rem;
+  padding: 1rem 1.5rem;
+  background-color: $color-primary;
+  border-radius: 9px;
+  max-width: 34.9rem;
+    &:hover {
+      background-color: $color-primary-light;
+      cursor: pointer;
+    }
+
+    @include media-690 {
+      max-width: 280px;
+      margin-top: 2.6rem;
+    }
+    
+}
+
+.donation-section__card-wrapper {
+  @include media-690 {
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+.donation-section__card-icon {
+  background-image: url("../../assets/icons/credit-card.svg");
+  width: 30px;
+  height: 23px;
+  display: block;
+}
+
+.donation-section__card-number {
+  font-family: Georgia; 
+  font-size: 2rem;
+  color: $color-dark-l;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  padding-left: 1.4rem;
+
+  @include media-690{
+    font-size: 1.5rem;
+  }
+}
+
+.donation-section__text {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $color-dark-m; 
+
+  @include media-690 {
+    text-align: justify;  
+  }
+
+  @include media-mobile {
+    max-width: 280px;
+    margin: 2rem auto;
+  }
+}
+
+.donation-section__img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  
+  @include media-tablet {
+    margin-top: 6rem;
+    max-width: 50.5rem;
+    padding: 0;
+  }
+
+  @include media-mobile{
+    margin-top: 22px;
+    max-width: 260px;
+  }
+}

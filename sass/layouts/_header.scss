@@ -1,0 +1,28 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+
+  @include media-tablet {
+    justify-content: initial;
+  }
+
+  @include media-mobile {
+    // position: relative;  
+  }
+}
+
+.header {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  @include media-laptop {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.header__logo {
+  margin-right: 40px;
+}

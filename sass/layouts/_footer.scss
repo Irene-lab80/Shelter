@@ -1,0 +1,141 @@
+.footer {
+  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+  padding-top: 4rem;
+  @include media-tablet {
+    padding-top: 3rem;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  width: calc(740px / 1200px * 100%);
+
+  & > div:nth-child(2) {
+    @include media-690 {
+     padding-top: 40px;
+    }
+  }
+  & > div:nth-child(1) {
+    @include media-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @include media-tablet {
+    width: 64rem;
+  }
+
+  @include media-690 {
+    flex-direction: column;
+    align-items: center;
+    width: initial;
+  }
+}
+
+.footer__title {
+  color: $color-light-xl;
+  padding-top: 1.6rem;
+  @include media-tablet {
+    padding-top: 0;
+  }
+  
+  @include media-mobile {
+    max-width: 278px;
+  }
+
+}
+
+.footer__info :nth-child(2) h3 {
+  max-width: 294px;
+}
+ 
+.footer__column {
+  max-width: 30rem;
+}
+
+.footer__column-item {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.footer__link {
+  display: contents;
+  font-family: 'Georgia';
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+}
+
+.footer__email-icon {
+  background-image: url("../../assets/icons/icon-email.svg");
+  width: 4rem;
+  height: 3.2rem;
+  display: inline-block;
+}
+
+.footer__phone-icon {
+  background-image: url("../../assets/icons/icon-phone.svg");
+  width: 4rem;
+  height: 3.2rem;
+  display: inline-block;
+}
+
+.footer__marker-icon {
+  background-image: url("../../assets/icons/icon-marker.svg");
+  width: 2.2rem;
+  height: 3.2rem;
+  display: inline-block;
+}
+
+.footer__column span{
+  margin-right: 2rem; 
+}
+
+.footer__column-item_marker1 {
+  margin-top: 3.2rem;
+  @include media-mobile {
+    margin-top: 4rem;
+  }
+}
+
+.footer__column-item_marker2 {
+  margin-top: 3.2rem;
+
+  // @include media-tablet {
+  //   margin-top: 0.2rem;
+  // }
+
+  @include media-mobile {
+    margin-top: 4rem;
+  }
+}
+
+.footer__img {
+  display: flex;
+  @include media-tablet {
+    width: 100%;
+    margin-top: 6.5rem;
+  }
+
+  @include media-mobile {
+    margin-top: 4rem;
+    max-width: 26rem;
+  }
+}

@@ -1,0 +1,140 @@
+.friends-section {
+  background: $color-light-l;
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  @include media-tablet {
+    padding-top: 75px;
+  }
+
+  @include media-mobile {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+.friends-section__title  {
+  text-align: center;
+}
+
+.friends-section__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 0;
+  position: relative;
+
+  
+  @include media-tablet {
+    // width: 80%;
+  }
+
+  // @include media-mobile {
+  //   padding: 42px 0 68px;
+  // }
+}
+
+.carousel-wrapper {
+  width: 990px;
+  margin: 0 53px;
+  overflow: hidden;
+  @include media-laptop {
+    width: 630px;
+  }
+
+  @include media-tablet {
+    width: 270px;
+  }
+
+  @include media-690 {
+    margin: 10px 0;
+  }
+ 
+  // max-height: 43.61rem;
+
+  // @include media-690 {
+  //   justify-content: center;
+  // }
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  left: -990px;
+}
+
+@keyframes move-right {
+  from {left: -990px;}
+  to {left: -1980px;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {left: -990px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+.item {
+  display: flex;
+  gap: 90px;
+
+  // @include media-900 {
+  //   gap: 60px;
+  // }
+
+  // @include media-tablet {
+  //   gap: 60px;
+  // }
+}
+
+
+// .item-left {
+//   background: green;
+// }
+
+// .item-right {
+//   background: yellow;
+// }
+
+// .item-active {
+//   background: pink;
+// }
+
+.friends-section__button {
+  display: flex;
+  justify-content: center;
+  // margin-top: 42px;
+
+  // @include media-tablet {
+  //   margin-top: 0;
+  // }
+
+  // @include media-520 {
+  //   margin-top: 42px;
+  // }
+}
+
+.button__round_left {
+  @include media-520 {
+    position: absolute;
+    bottom: -52px;
+    left: 27px;
+  }
+}
+
+.button__round_right {
+  @include media-520 {
+    position: absolute;
+    bottom: -52px;
+    right: 27px;
+  }
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+
+  // padding: 0 40px;
+
+  @include media-laptop {
+    padding: 0 30px;
+  }
+
+  @include media-520 {
+    padding: 0 10px;
+  }
+}
+
